@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survivello</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hlavní herní kontejner (udržuje poměr 16:9) -->
+    <div id="game-container">
+        <!-- Horní lišta pro UI -->
+        <div id="top-bar">
+            <div id="backpack-icon" class="ui-placeholder">🎒 Batoh</div>
+            <div id="map-icon" class="ui-placeholder">🗺️ Mapa</div>
+        </div>
+        
+        <!-- Hlavní herní plocha (zde bude statické pozadí měnící se podle biomu) -->
+        <div id="game-view">
+            <h1 id="biome-title">Načítání...</h1>
+            <p id="debug-info">Souřadnice: X:0, Y:0</p>
+        </div>
+        
+        <!-- Spodní lišta (8 akčních tlačítek pro crafting a akce) -->
+        <div id="bottom-bar">
+            <button class="action-btn">Akce 1</button>
+            <button class="action-btn">Akce 2</button>
+            <button class="action-btn">Akce 3</button>
+            <button class="action-btn">Akce 4</button>
+            <button class="action-btn">Akce 5</button>
+            <button class="action-btn">Akce 6</button>
+            <button class="action-btn">Akce 7</button>
+            <button class="action-btn">Akce 8</button>
+        </div>
+    </div>
+
+    <!-- Hlavní herní skript -->
+    <script src="main.js"></script>
+</body>
+</html>
