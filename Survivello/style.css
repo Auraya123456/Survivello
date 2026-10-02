@@ -102,3 +102,36 @@ body {
     background-color: #444;
     color: #fff;
 }
+
+/* Mapa (Fog of War) */
+#map-overlay {
+    display: none; /* Skryto ve výchozím stavu */
+    position: absolute;
+    top: 60px; /* Pod horní lištou */
+    bottom: 60px; /* Nad spodní lištou */
+    left: 0;
+    right: 0;
+    background-color: rgba(10, 10, 10, 0.95);
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#map-title {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #ddd;
+}
+
+#map-canvas-container {
+    border: 2px solid #555;
+    background-color: #000;
+    margin-bottom: 20px;
+}
+
+#close-map-btn {
+    padding: 10px 30px;
+    font-size: 1.1rem;
+}
